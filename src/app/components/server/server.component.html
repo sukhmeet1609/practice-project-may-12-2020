@@ -1,0 +1,16 @@
+<p
+  [ngStyle]="{ 'background-color': getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  Server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- Note: ngStyle and ngClass only work with Property Binding syntax -->
+
+<!-- Two ways to use ngStyle; ngStyle allows us to apply css styles dynamically -->
+<!-- <p [ngStyle]="{'background-color': 'red'}">Server with ID {{ serverId }} is {{ getServerStatus() }}</p> -->
+<!-- <p [ngStyle]="{backgroundColor: 'red'}">Server with ID {{ serverId }} is {{ getServerStatus() }}</p> -->
+
+<!-- ngClass allows us to apply css classes dynamically -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
